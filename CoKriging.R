@@ -24,10 +24,6 @@ foreach(tt = time.step, .packages = c("Rcpp", "huge", "SLHD", "nloptr", "Injecto
   ###     Step 1: BCD algorithm for maximum likelihood estimation: Optimizing mu and correlation parameters
   ###                  See Algorithm 1 in paper
   # lower bound and upper bound for correlation parameters
-  # lower <- -2
-  # upper <- 1
-  # lower <- 0.09
-  # upper <- 0.99
   lower <- 0.01
   upper <- 0.99
   # the estimates for the correlation parameters
