@@ -28,10 +28,10 @@ dompi                <- FALSE        # do mpi parallel or not
 
 ### set up for parallel
 if(dompi){
-  cl <- startMPIcluster(count = 2, verbose = TRUE, maxcores = 64)
+  cl <- startMPIcluster(count = 2, verbose = TRUE, maxcores = detectCores())
   registerDoMPI(cl)
 }else{
-  sfInit(parallel = TRUE, cpus = 64)
+  sfInit(parallel = TRUE, cpus = detectCores())
   cl <- sfGetCluster()
   registerDoParallel(cl)
 }

@@ -46,10 +46,10 @@ load(paste0(output.folder.path, "/MeanFlow.RData"))
 ### set up for parallel
 #sfInit(parallel = TRUE, cpus = 20, type = "MPI")
 if(dompi){
-  cl <- startMPIcluster(count = 2, verbose = TRUE, maxcores = 20)
+  cl <- startMPIcluster(count = 2, verbose = TRUE, maxcores = detectCores())
   registerDoMPI(cl)
 }else{
-  sfInit(parallel = TRUE, cpus = 64)
+  sfInit(parallel = TRUE, cpus = detectCores())
   cl <- sfGetCluster()
   registerDoParallel(cl)
 }

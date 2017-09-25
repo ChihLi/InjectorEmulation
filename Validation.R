@@ -2,6 +2,7 @@
 #              *** VALIDATION ***                        #
 #    MADE BY CHIH-LI and SIMON ON 10/5/2015              #
 #    NOTE: COMPARISON BY FIGURES AND MRE                 #
+#          (FIGURE 7 AND 8)                              #
 ##########################################################
 
 cat("Validating new design ...\n")

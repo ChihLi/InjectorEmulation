@@ -1,3 +1,10 @@
+############################################################
+#              *** VALIDATION ***                          #
+#    MADE BY CHIH-LI and SIMON ON 9/19/2017                #
+#    NOTE: PLOT POD MODES OF CIRCUMFERENTIAL VELOCITY FLOW #
+#          (FIGURE 6)                                      #
+############################################################
+
 r <- 3  ## circumferential velocity flow
 load(paste0(output.folder.path, "/POD_expansion/", Response.ColumnIndex[r], "/mode.B.RData"))
 load(paste0(output.folder.path, "/POD_expansion/", Response.ColumnIndex[r], "/mode.phi.RData"))
