@@ -9,7 +9,10 @@ r <- 3  ## circumferential velocity flow
 load(paste0(output.folder.path, "/POD_expansion/", Response.ColumnIndex[r], "/mode.B.RData"))
 load(paste0(output.folder.path, "/POD_expansion/", Response.ColumnIndex[r], "/mode.phi.RData"))
 
-Coordinate <- CommonCoord.i
+Coordinate <- rbind(a.coord, b.coord, d.coord, c.coord)
+numCol <- 1000   #numCol colors in legend
+colors <- matlab.like(numCol+1)
+
 png(paste0(output.folder.path, "/POD_expansion/", Response.ColumnIndex[r], "/mode1.png"), width = 800, height = 400)
 Range <- c(-6, -1)
 y <- mode.phi[,1] * mode.B[1,1]
