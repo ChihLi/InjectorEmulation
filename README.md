@@ -1,5 +1,5 @@
 # InjectorEmulation
-The codes implement the method proposed by Mak, S. et al. (2017+) &lt;arXiv:1611.07911>
+The codes implement the method proposed by [Mak, Sung, Yeh, Wang, Chang, Joseph, Yang, and Wu (2018)](https://www.tandfonline.com/doi/abs/10.1080/01621459.2017.1409123).
 
 To reproduce Figures 6 and 7, and the corresponding values for Figure 8 in the paper, run the file “example2.R”. The R package “InjectorEmulationHelper” needs to be installed from the source package file “InjectorEmulationHelper.tar.gz”. The reproduced results for Figure 6 and 7 are outputted to the directories “output2/POD_expansion/6” and “output2/validation/comparison”, while the results for Figure 8 are printed on the console.  
 
